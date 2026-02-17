@@ -60,15 +60,6 @@ export function parseProductPage(html: string, productUrl: string): ProductDetai
     }
   });
 
-  // Fallback: if no images found in gallery, try the product detail section
-  if (images.length === 0) {
-    const productDetailImg = $('.product-detail').find('img[src*="imgcdn.mckesson.com"]').first();
-    if (productDetailImg.length > 0) {
-      const src = productDetailImg.attr('src');
-      if (src) images.push(src);
-    }
-  }
-
   // Main image URL is the first high-res image (for backward compatibility)
   const imageUrl = images.length > 0 ? images[0] : null;
 
