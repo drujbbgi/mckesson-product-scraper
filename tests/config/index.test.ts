@@ -49,17 +49,17 @@ describe('getSearchUrl', () => {
 
   it('should construct search URL with encoded query', () => {
     const url = getSearchUrl(config, 'ABC123');
-    expect(url).toBe('https://mms.mckesson.com/catalog?query=ABC123');
+    expect(url).toBe('https://mms.mckesson.com/catalog?query=ABC123&sort=Mf');
   });
 
   it('should encode special characters in query', () => {
     const url = getSearchUrl(config, 'ABC 123');
-    expect(url).toBe('https://mms.mckesson.com/catalog?query=ABC%20123');
+    expect(url).toBe('https://mms.mckesson.com/catalog?query=ABC%20123&sort=Mf');
   });
 
   it('should encode URL-special characters', () => {
     const url = getSearchUrl(config, 'A&B=C');
-    expect(url).toBe('https://mms.mckesson.com/catalog?query=A%26B%3DC');
+    expect(url).toBe('https://mms.mckesson.com/catalog?query=A%26B%3DC&sort=Mf');
   });
 });
 

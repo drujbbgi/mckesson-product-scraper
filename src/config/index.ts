@@ -29,7 +29,7 @@ export function createConfig(options: Partial<ScraperConfig> = {}): ScraperConfi
  */
 export function getSearchUrl(config: ScraperConfig, mpn: string): string {
   const encodedQuery = encodeURIComponent(mpn);
-  return `${config.baseUrl}/catalog?query=${encodedQuery}`;
+  return `${config.baseUrl}/catalog?query=${encodedQuery}&sort=Mf`;
 }
 
 /**

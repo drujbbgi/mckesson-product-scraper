@@ -1,6 +1,6 @@
 {
   "name": "mckesson-product-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Product scraper for McKesson medical supplies website",
   "main": "dist/index.js",
   "scripts": {
