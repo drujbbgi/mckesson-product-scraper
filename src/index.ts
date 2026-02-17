@@ -16,7 +16,7 @@ const program = new Command();
 program
   .name('mckesson-scraper')
   .description('Scrape product information from McKesson medical supplies website')
-  .version('1.0.0');
+  .version('1.0.1');
 
 program
   .option('-i, --input <file>', 'Input file containing MPN list (one per line)', DEFAULT_CONFIG.inputFile)
