@@ -61,7 +61,7 @@ export function parseProductPage(html: string, productUrl: string): ProductDetai
   });
 
   // Use placeholder image if no product images found
-  const PLACEHOLDER_IMAGE = 'https://cdn.prod.website-files.com/68af9060d585e89323ce4b59/68e35178711b55206f1e95f5_ndr_placeholder_white.webp';
+  const PLACEHOLDER_IMAGE = 'https://cdn.prod.website-files.com/68af9060d585e89323ce4b59/6993fffa8ae6f351bcbe96fe_ndr_placeholder_white.png';
   if (images.length === 0) {
     images.push(PLACEHOLDER_IMAGE);
   }
